@@ -16,17 +16,17 @@
         <link rel="stylesheet" href="css/style.css">
         <title>Document</title>
     </head>
-    <body >
-        <div class="container">
-            <div class="row my-5">
-                <div class="col-lg-12 col-12">
-
-                    <video autoplay="true" id="videoElement"></video>
-                </div>
-
-            </div>
+    <body onload="init_api()">
+        <div class="fp-Video">
+            <div id="local" class="display"></div>
         </div>
+        <div class="fp-Video">
+            <div id="remote" class="display"></div>
+        </div>
+        <button id="startBtn">Start</button>
 
     </body>
+    <script type="text/javascript" src="video-chat-min.js"></script>
+    <script type="text/javascript" src="https://flashphoner.com/downloads/builds/flashphoner_client/wcs_api-2.0/current/flashphoner.js"></script>
     <script src="js/main.js"></script>
 </html>
